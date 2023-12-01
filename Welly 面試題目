@@ -1,0 +1,42 @@
+1. JavaScript: 字串反轉
+
+function reverseString(str){
+  // 實作你的解答
+  return [...str].reverse().join("")
+}
+
+2. JavaScript: 陣列過濾
+
+function filterNumbersGreaterThanFive(numbers) {
+  // 實作你的解答
+  return numbers.filter((n)=>n>5)
+}
+
+3. JavaScript: 重構
+
+function formatName(firstName, lastName) {
+  // 理由: 使用 Nullish coalescing operator 簡化程式碼，可讀性也較佳
+  return (firstName ?? "") + " " + (lastName ?? "")
+}
+
+4. React: 條件渲染
+
+function ConditionalRendering({ isLoggedIn }) {
+  // 實作你的條件渲染
+  return ({
+    isLoggedIn? <>User Logged In</>: <>User Not Logged In</>
+  })
+}
+
+5. React: 組件
+
+function Counter() {
+  const [count, setCount] = useState(0)
+
+  return (<>
+    <div>{count}</div>
+    <button onClick={()=>{setCount(count+1)}}>+</button>
+    <button onClick={()=>{setCount(count-1)}}>-</button>
+  </>)
+}
+
